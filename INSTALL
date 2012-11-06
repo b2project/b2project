@@ -1,0 +1,24 @@
+INSTALLING
+==========
+
+Run "./install.sh [argument list]" where arguments are:
+
+--server	install server part (core and node process)
+--client	install object management library (Python)
+--webadmin	install webadmin (wsgi script, static files and apache2 configuration)
+
+CONFIGURING SERVER
+==================
+
+cd into "/opt/b2project" and copy "conf.sample" into "conf". Then edit configuration files within newly created directory according to your needs.
+
+USING CLIENT LIBRARY
+====================
+
+Using python interpreter execute:
+
+>>> import b2lib
+>>> app = b2lib.Application()
+
+then use any of its methods.
+
